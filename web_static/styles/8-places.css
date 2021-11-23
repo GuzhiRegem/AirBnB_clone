@@ -34,7 +34,8 @@
 
 .price_by_night{
     height: 60px;
-    width: 60px;
+    width: auto;
+    padding: 0 3px;
     font-size: 30px;
     border: #FF5A5F 4px solid;
     border-radius: 50%;
