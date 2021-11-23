@@ -1,0 +1,124 @@
+.places{
+    margin-top: 40px;
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.places h1{
+    margin: 0 100% 0 0;
+    font-size: 30px;
+}
+
+
+.places article{
+    width: 390px;
+    border: #FF5A5F 1px solid;
+    border-radius: 4px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: auto 20%;
+    padding: 20px;
+    transition: ease 1s all;
+    z-index: 0;
+}
+
+.places article h2{
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    left: 12.5%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.price_by_night{
+    height: 60px;
+    width: auto;
+    padding: 0 3px;
+    font-size: 30px;
+    border: #FF5A5F 4px solid;
+    border-radius: 50%;
+    min-width: 60px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #FF5A5F;
+    justify-self: right;
+    transition: all 0.5s ease;
+}
+
+.information{
+    width: 100%;
+    grid-column: span 2;
+    margin: 10px 0;
+    border-top: #DDDDDD 1px solid;
+    border-bottom: #DDDDDD 1px solid;
+    display: flex;
+    flex: nowrap;
+    justify-content: center;
+}
+
+.user {
+    grid-column: span 2;
+    margin: 3px 0;
+}
+
+.user:before {
+    content: "Owner:";
+    font-weight: bold;
+}
+
+.description {
+    grid-column: span 2;
+}
+
+.information div {
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center 5px;
+    height: 70px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 10px;
+    transition: all 0.2s ease;
+}
+
+.amenities {
+    grid-column: span 2;
+    margin-top: 40px;
+}
+
+.amenities h2 {
+    font-size: 16px;
+    border-bottom: #DDDDDD 1px solid;
+}
+
+.reviews {
+    grid-column: span 2;
+}
+
+.max_guest {
+    background-image: url("../images/icon_guests.png");
+}
+
+.number_rooms {
+    background-image: url("../images/icon_bed.png");
+}
+
+.number_bathrooms {
+    background-image: url("../images/icon_bath.png");
+}
+
+.places article:hover{
+    transform: scale(1.05, 1.05);
+    z-index: 1;
+}
+.information div:hover{
+    transform: scale(1.05, 1.05);
+}
+.places article:hover > .price_by_night{
+    transform: scale(1.1, 1.1);
+    font-size: 32px;
+}
