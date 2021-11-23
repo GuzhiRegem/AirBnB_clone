@@ -19,6 +19,8 @@
     display: grid;
     grid-template-columns: auto 20%;
     padding: 20px;
+    transition: ease 1s all;
+    z-index: 0;
 }
 
 .places article h2{
@@ -42,6 +44,7 @@
     align-items: center;
     color: #FF5A5F;
     justify-self: right;
+    transition: all 0.5s ease;
 }
 
 .information{
@@ -78,6 +81,7 @@
     align-items: end;
     justify-content: center;
     padding-bottom: 10px;
+    transition: all 0.2s ease;
 }
 
 .max_guest {
@@ -90,4 +94,16 @@
 
 .number_bathrooms {
     background-image: url("../images/icon_bath.png");
+}
+
+.places article:hover{
+    transform: scale(1.05, 1.05);
+    z-index: 1;
+}
+.information div:hover{
+    transform: scale(1.05, 1.05);
+}
+.places article:hover > .price_by_night{
+    transform: scale(1.1, 1.1);
+    font-size: 32px;
 }
