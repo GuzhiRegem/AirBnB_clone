@@ -18,6 +18,7 @@
     margin: 30px auto;
     display: grid;
     grid-template-columns: auto 20%;
+    padding: 20px;
 }
 
 .places article h2{
@@ -25,6 +26,8 @@
     text-align: center;
     position: relative;
     left: 12.5%;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .price_by_night{
@@ -39,19 +42,52 @@
     align-items: center;
     color: #FF5A5F;
     justify-self: right;
-    margin: 10px;
 }
 
 .information{
     width: 100%;
-    background-color: aqua;
     grid-column: span 2;
+    margin: 10px 0;
+    border-top: #DDDDDD 1px solid;
+    border-bottom: #DDDDDD 1px solid;
+    display: flex;
+    flex: nowrap;
+    justify-content: center;
 }
 
 .user {
     grid-column: span 2;
+    margin: 3px 0;
+}
+
+.user:before {
+    content: "Owner:";
+    font-weight: bold;
 }
 
 .description {
     grid-column: span 2;
+}
+
+.information div {
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center 5px;
+    height: 70px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.max_guest {
+    background-image: url("../images/icon_guests.png");
+}
+
+.number_rooms {
+    background-image: url("../images/icon_bed.png");
+}
+
+.number_bathrooms {
+    background-image: url("../images/icon_bath.png");
 }
