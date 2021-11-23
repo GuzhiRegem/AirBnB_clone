@@ -30,6 +30,12 @@
     height: 100%;
     width: 25%;
     display: grid;
+    transition: all ease 0.4s
+
+}
+
+.filters div:hover {
+    width: 27%;
 }
 
 .filters .locations {
@@ -44,20 +50,21 @@
 .filters div h4 {
     font-weight: 400;
     font-size: 14px;
-    margin: 0 auto 0 40px;
+    margin: 10px auto 0 40px;
     position: relative;
     top: -7px;
 }
 
 .popover {
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: #FAFAFA;
     border: #DDDDDD 1px solid;
     border-radius: 4px;
     padding-top: 35px;
-    padding-bottom: 35px;
+    padding-bottom: 45px;
     padding-left: 0px;
-    display: none;
+    transform: scale(0.0, 0.0);
+    transition: all 0.2s ease;
 }
 
 .popover h2 {
@@ -66,7 +73,7 @@
 }
 
 .filters div:hover > .popover{
-    display: block;
+    transform: scale(1.0, 1.0);
 }
 
 ul {
